@@ -1,0 +1,29 @@
+$colors: (
+  strong-cyan: hsl(171, 66%, 44%),
+  light-blue: hsl(233, 100%, 69%),
+  dark-grayish-blue: hsl(210, 10%, 33%),
+  grayish-blue: hsl(201, 11%, 66%),
+);
+
+@function color($color) {
+    @return map-get($colors, $color);
+}
+
+@mixin flex($just,$align) {
+    display: flex;
+    justify-content: $just;
+    align-items: $align;
+}
+
+@mixin idealFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
