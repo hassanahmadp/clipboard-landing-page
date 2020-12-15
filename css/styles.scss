@@ -28,10 +28,17 @@ $fact: (10/18);
   padding: 0;
   box-sizing: border-box;
   font-family: "Bai Jamjuree", sans-serif;
+  &:focus {
+    outline: none;
+  }
 }
 
 html {
   font-size: 18px;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .background {
@@ -77,6 +84,15 @@ button {
   border-radius: 30px;
   font-size: 1rem;
   margin: 0 0.5rem*$fact;
+  // transition: opacity 3s ease-in-out;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    opacity: .7;
+  }
+  &:active {
+    transform: scale(.92);
+  }
 }
 
 @import "./header";

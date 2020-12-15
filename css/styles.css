@@ -6,8 +6,16 @@
   font-family: "Bai Jamjuree", sans-serif;
 }
 
+*:focus {
+  outline: none;
+}
+
 html {
   font-size: 18px;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .background {
@@ -54,6 +62,18 @@ button {
   border-radius: 30px;
   font-size: 1rem;
   margin: 0 0.27778rem;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: .7;
+}
+
+button:active {
+  -webkit-transform: scale(0.92);
+          transform: scale(0.92);
 }
 
 header {
@@ -73,6 +93,7 @@ header p {
 .logo {
   height: 6.94444rem;
   width: 6.94444rem;
+  position: relative;
 }
 
 button.for-ios {
@@ -270,6 +291,7 @@ footer ul {
 }
 
 footer ul li {
+  cursor: pointer;
   color: #4c545d;
   margin-bottom: 0.5rem;
   font-weight: 600;
@@ -291,6 +313,7 @@ footer ul li:hover {
 }
 
 .social i {
+  cursor: pointer;
   margin: 0 0.55556rem;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;

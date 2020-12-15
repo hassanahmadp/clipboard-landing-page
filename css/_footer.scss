@@ -21,6 +21,7 @@ footer {
     flex-wrap: wrap;
     list-style: none;
     li {
+        cursor: pointer;
       color: color(dark-grayish-blue);
       margin-bottom: 0.5rem;
       font-weight: 600;
@@ -40,6 +41,7 @@ footer {
   width: 35%;
   font-size: 1.7rem;
   i {
+      cursor: pointer;
     margin: 0 1rem * $fact;
     transition: all .2s ease-in-out;
     &:hover {
