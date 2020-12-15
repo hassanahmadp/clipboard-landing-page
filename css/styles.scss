@@ -5,20 +5,22 @@ $colors: (
   grayish-blue: hsl(201, 11%, 66%),
 );
 
+$fact: (10/18);
+
 @function color($color) {
-    @return map-get($colors, $color);
+  @return map-get($colors, $color);
 }
 
-@mixin flex($just,$align) {
-    display: flex;
-    justify-content: $just;
-    align-items: $align;
+@mixin flex($just, $align) {
+  display: flex;
+  justify-content: $just;
+  align-items: $align;
 }
 
 @mixin idealFlex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
@@ -29,5 +31,49 @@ $colors: (
 }
 
 html {
-    font-size: 18px;
+  font-size: 18px;
 }
+
+.background {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mobile {
+  display: none;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h1,h2,h3,h4 {
+  color: color(dark-grayish-blue);
+}
+
+p,li {
+  color: color(grayish-blue);
+}
+
+button {
+  color: white;
+  font-weight: 600;
+  height: 5.6rem*$fact;
+  width: 22.7rem*$fact;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  margin: 0 0.5rem*$fact;
+}
+
+@import "./header";

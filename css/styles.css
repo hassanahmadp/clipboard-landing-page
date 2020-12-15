@@ -9,4 +9,75 @@
 html {
   font-size: 18px;
 }
+
+.background {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mobile {
+  display: none;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h1, h2, h3, h4 {
+  color: #4c545d;
+}
+
+p, li {
+  color: #9fabb2;
+}
+
+button {
+  color: white;
+  font-weight: 600;
+  height: 3.11111rem;
+  width: 12.61111rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  margin: 0 0.27778rem;
+}
+
+header {
+  text-align: center;
+  padding: 7.22222rem 0 0;
+}
+
+header h2 {
+  margin-top: 4rem;
+}
+
+header p {
+  margin: 1.11111rem auto 2rem;
+  padding: 0 25.5% 0;
+}
+
+.logo {
+  height: 6.94444rem;
+  width: 6.94444rem;
+}
+
+button.for-ios {
+  background-color: #26baa4;
+  border-bottom: 4px solid #1d907f;
+}
+
+button.for-mac {
+  background-color: #6173ff;
+  border-bottom: 4px solid #2e46ff;
+}
 /*# sourceMappingURL=styles.css.map */
