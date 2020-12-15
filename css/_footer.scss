@@ -1,0 +1,49 @@
+footer {
+  margin-top: 15rem * $fact;
+  height: 15rem * $fact;
+  background-color: lighten(color(grayish-blue), 25%);
+  //   padding: 4.3rem * $fact 3.1rem * $fact 0;
+  @include flex(space-evenly, center);
+  .footer-img {
+    height: 100%;
+    width: 32rem * $fact;
+    @include idealFlex;
+    .footer-logo {
+      width: 5.5rem * $fact;
+      height: 5.5rem * $fact;
+    }
+  }
+
+  ul {
+    width: 3 * 19rem * $fact;
+    text-align: left;
+    @include flex(stretch, center);
+    flex-wrap: wrap;
+    list-style: none;
+    li {
+      color: color(dark-grayish-blue);
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      width: 19rem * $fact;
+      transition: all .2s ease-in-out;
+      &:hover {
+        color: color(strong-cyan);
+      }
+    }
+  }
+}
+
+.social {
+  text-align: right;
+  padding-right: 7%;
+  color: color(dark-grayish-blue);
+  width: 35%;
+  font-size: 1.7rem;
+  i {
+    margin: 0 1rem * $fact;
+    transition: all .2s ease-in-out;
+    &:hover {
+      color: color(strong-cyan);
+    }
+  }
+}

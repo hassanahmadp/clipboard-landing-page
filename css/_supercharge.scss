@@ -1,0 +1,27 @@
+.supercharge {
+  text-align: center;
+  margin-top: 7.4rem * $fact;
+}
+
+.tools-div {
+  margin-top: 6rem * $fact;
+  @include flex(center, stretch);
+}
+
+.tool {
+  margin: 1rem;
+  height: 22rem * $fact;
+  width: 38.7rem * $fact;
+  img {
+    height: 4rem * $fact;
+  }
+  h4 {
+    margin-top: 4rem * $fact;
+    margin-bottom: 2.5rem * $fact;
+  }
+}
+
+.brands-div {
+    margin-top: 17rem*$fact;
+    @include flex(space-evenly,center);
+}
