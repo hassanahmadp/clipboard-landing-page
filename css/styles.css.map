@@ -4,7 +4,11 @@
     "sources": [
         "styles.scss",
         "_header.scss",
-        "_keepTrack.scss"
+        "_keepTrack.scss",
+        "_clipboard-access.scss",
+        "_supercharge.scss",
+        "_ios-and-mac.scss",
+        "_footer.scss"
     ],
     "names": [],
     "file": "styles.css"
