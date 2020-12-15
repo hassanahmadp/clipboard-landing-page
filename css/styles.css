@@ -62,7 +62,7 @@ header h2 {
 }
 
 header p {
-  margin: 1.11111rem auto 2rem;
+  margin: 1.11111rem auto 2.3rem;
   padding: 0 25.5% 0;
 }
 
@@ -79,5 +79,67 @@ button.for-ios {
 button.for-mac {
   background-color: #6173ff;
   border-bottom: 4px solid #2e46ff;
+}
+
+section.keep-track {
+  text-align: center;
+  margin-top: 8.61111rem;
+}
+
+section.keep-track h3 {
+  margin-bottom: 1rem;
+}
+
+section.keep-track p.KT-main-para {
+  padding: 0 22.5% 0;
+}
+
+.keep-track-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4.61111rem;
+}
+
+.KT-img {
+  width: 50%;
+}
+
+.KT-img img {
+  width: 110%;
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+}
+
+.KT-col-flex-divs {
+  position: relative;
+  left: 2vw;
+  height: 22.5rem;
+  padding: 0 18.5% 0 5%;
+  text-align: left;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.KT-col-flex-divs h4 {
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */
