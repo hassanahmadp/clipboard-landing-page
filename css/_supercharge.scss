@@ -6,6 +6,7 @@
 .tools-div {
   margin-top: 6rem * $fact;
   @include flex(center, stretch);
+  flex-wrap: wrap;
 }
 
 .tool {
@@ -22,6 +23,7 @@
 }
 
 .brands-div {
-    margin-top: 17rem*$fact;
-    @include flex(space-evenly,center);
+  margin-top: 17rem * $fact;
+  @include flex(space-evenly, center);
+  flex-wrap: wrap;
 }

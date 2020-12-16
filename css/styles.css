@@ -130,10 +130,14 @@ section.keep-track p.KT-main-para {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 4.61111rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .KT-img {
-  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 27.77778rem;
+          flex: 1 1 27.77778rem;
 }
 
 .KT-img img {
@@ -148,7 +152,9 @@ section.keep-track p.KT-main-para {
   height: 22.5rem;
   padding: 0 18.5% 0 5%;
   text-align: left;
-  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 27.77778rem;
+          flex: 1 1 27.77778rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -199,6 +205,8 @@ section.keep-track p.KT-main-para {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .tool {
@@ -227,6 +235,8 @@ section.keep-track p.KT-main-para {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .ios-and-mac {
@@ -241,7 +251,7 @@ section.keep-track p.KT-main-para {
 
 footer {
   margin-top: 8.33333rem;
-  height: 8.33333rem;
+  min-height: 8.33333rem;
   background-color: #e6e9eb;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,6 +262,8 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 footer .footer-img {

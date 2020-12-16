@@ -12,10 +12,11 @@ section.keep-track {
 .keep-track-flex {
   @include idealFlex;
   margin-top: 8.3rem * $fact;
+  flex-wrap: wrap;
 }
 
 .KT-img {
-  width: 50%;
+  flex: 1 1 50rem*$fact;
   img {
     width: 110%;
     transform: translateX(-10%);
@@ -28,7 +29,7 @@ section.keep-track {
   height: 40.5rem * $fact;
   padding: 0 18.5% 0 5%;
   text-align: left;
-  width: 50%;
+  flex: 1 1 50rem*$fact;
   flex-direction: column;
   @include flex(space-between, flex-start);
   h4 {

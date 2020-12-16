@@ -1,9 +1,10 @@
 footer {
   margin-top: 15rem * $fact;
-  height: 15rem * $fact;
+  min-height: 15rem * $fact;
   background-color: lighten(color(grayish-blue), 25%);
   //   padding: 4.3rem * $fact 3.1rem * $fact 0;
   @include flex(space-evenly, center);
+  flex-wrap: wrap;
   .footer-img {
     height: 100%;
     width: 32rem * $fact;
