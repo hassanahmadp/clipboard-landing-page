@@ -313,6 +313,7 @@ section.keep-track p.KT-main-para {
 }
 
 .supercharge {
+  height: auto;
   text-align: center;
   margin-top: 4.11111rem;
 }
@@ -333,7 +334,7 @@ section.keep-track p.KT-main-para {
 }
 
 .tool {
-  margin: 1rem;
+  margin: 2rem 1rem;
   height: 12.22222rem;
   width: 21.5rem;
 }
@@ -343,7 +344,7 @@ section.keep-track p.KT-main-para {
 }
 
 .tool h4 {
-  margin-top: 2.22222rem;
+  margin-top: 1.66667rem;
   margin-bottom: 1.38889rem;
 }
 
@@ -524,7 +525,7 @@ ul li:hover {
             align-items: center;
   }
   ul li {
-    margin: 1rem 4rem;
+    margin: 1rem 2.5rem;
     width: auto;
   }
   .social {
