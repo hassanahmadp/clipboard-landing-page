@@ -26,3 +26,22 @@ button.for-mac {
   background-color: color(light-blue);
   border-bottom: 4px solid darken(color(light-blue), 10%);
 }
+
+@media (max-width: 580px) {
+  .logo {
+    height: 12.5rem * $fact * 0.8;
+    width: 12.5rem * $fact * 0.8;
+  }
+  header {
+    padding: 7rem * $fact 5% 0;
+
+    h2 {
+      margin-top: 7.2rem * $fact * .5;
+    }
+
+    p {
+      margin: 2rem * $fact auto 2.3rem;
+      padding: 0 0;
+    }
+  }
+}

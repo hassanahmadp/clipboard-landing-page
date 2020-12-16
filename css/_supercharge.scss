@@ -27,3 +27,15 @@
   @include flex(space-evenly, center);
   flex-wrap: wrap;
 }
+
+@media (max-width: 999px) {
+  .brands-div {
+    margin-top: 12rem * $fact;
+    @include flex(space-evenly, center);
+    flex-wrap: wrap;
+    height: auto;
+    img.brand {
+      margin: 5rem * $fact 4.5rem;
+    }
+  }
+}

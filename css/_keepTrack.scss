@@ -16,7 +16,7 @@ section.keep-track {
 }
 
 .KT-img {
-  flex: 1 1 50rem*$fact;
+  flex: 1 1 50rem * $fact;
   img {
     width: 110%;
     transform: translateX(-10%);
@@ -29,10 +29,49 @@ section.keep-track {
   height: 40.5rem * $fact;
   padding: 0 18.5% 0 5%;
   text-align: left;
-  flex: 1 1 50rem*$fact;
+  flex: 1 1 50rem * $fact;
   flex-direction: column;
   @include flex(space-between, flex-start);
   h4 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 580px) {
+  section.keep-track {
+    padding: 0 10%;
+    h3 {
       margin-bottom: 1rem;
+    }
+    p.KT-main-para {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 999px) {
+  section.keep-track {
+    padding: 0 7%;
+  }
+  .KT-img {
+    img {
+      width: 100%;
+      transform: translateX(0%);
+    }
+  }
+
+  .KT-col-flex-divs {
+    margin-bottom: 2.75rem * $fact;
+    left: 0;
+    padding: 0 10% 0;
+    text-align: center;
+    flex-direction: column;
+    @include flex(space-between, center);
+    h4 {
+      margin-bottom: 1rem;
+    }
+  }
+  .KT-col-flex-divs > div {
+    margin-top: 5.5rem * $fact;
   }
 }
