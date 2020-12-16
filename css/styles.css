@@ -393,6 +393,16 @@ section.keep-track p.KT-main-para {
   margin: 1.11111rem 0 2.5rem;
 }
 
+@media (max-width: 580px) {
+  .ios-and-mac {
+    padding: 0 10%;
+  }
+  .ios-and-mac p {
+    padding: 0;
+    margin: 1.11111rem 0 2.5rem;
+  }
+}
+
 footer {
   margin-top: 8.33333rem;
   min-height: 8.33333rem;
@@ -429,7 +439,7 @@ footer .footer-img .footer-logo {
   height: 3.05556rem;
 }
 
-footer ul {
+ul {
   width: 31.66667rem;
   text-align: left;
   display: -webkit-box;
@@ -446,17 +456,17 @@ footer ul {
   list-style: none;
 }
 
-footer ul li {
+ul li {
   cursor: pointer;
   color: #4c545d;
   margin-bottom: 0.5rem;
   font-weight: 600;
   width: 10.55556rem;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-footer ul li:hover {
+ul li:hover {
   color: #26baa4;
 }
 
@@ -471,11 +481,67 @@ footer ul li:hover {
 .social i {
   cursor: pointer;
   margin: 0 0.55556rem;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .social i:hover {
   color: #26baa4;
+}
+
+@media (max-width: 1369px) {
+  footer .footer-img {
+    margin: 2.77778rem 0 2.22222rem;
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-img .footer-logo {
+    width: 3.05556rem;
+    height: 3.05556rem;
+  }
+  ul {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  ul li {
+    margin: 1rem 4rem;
+    width: auto;
+  }
+  .social {
+    margin: 2.22222rem 0;
+    text-align: center;
+    padding: 0 7%;
+    font-size: 1.9rem;
+    width: 100%;
+  }
+  .social i {
+    cursor: pointer;
+    margin: 0 0.55556rem;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .social i:hover {
+    color: #26baa4;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

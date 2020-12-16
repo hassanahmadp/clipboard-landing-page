@@ -2,7 +2,6 @@ footer {
   margin-top: 15rem * $fact;
   min-height: 15rem * $fact;
   background-color: lighten(color(grayish-blue), 25%);
-  //   padding: 4.3rem * $fact 3.1rem * $fact 0;
   @include flex(space-evenly, center);
   flex-wrap: wrap;
   .footer-img {
@@ -14,23 +13,23 @@ footer {
       height: 5.5rem * $fact;
     }
   }
+}
 
-  ul {
-    width: 3 * 19rem * $fact;
-    text-align: left;
-    @include flex(stretch, center);
-    flex-wrap: wrap;
-    list-style: none;
-    li {
-        cursor: pointer;
-      color: color(dark-grayish-blue);
-      margin-bottom: 0.5rem;
-      font-weight: 600;
-      width: 19rem * $fact;
-      transition: all .2s ease-in-out;
-      &:hover {
-        color: color(strong-cyan);
-      }
+ul {
+  width: 3 * 19rem * $fact;
+  text-align: left;
+  @include flex(stretch, center);
+  flex-wrap: wrap;
+  list-style: none;
+  li {
+    cursor: pointer;
+    color: color(dark-grayish-blue);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    width: 19rem * $fact;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: color(strong-cyan);
     }
   }
 }
@@ -42,11 +41,52 @@ footer {
   width: 35%;
   font-size: 1.7rem;
   i {
-      cursor: pointer;
+    cursor: pointer;
     margin: 0 1rem * $fact;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     &:hover {
       color: color(strong-cyan);
+    }
+  }
+}
+@media (max-width: 1369px) {
+  footer {
+    .footer-img {
+      margin: 5rem * $fact 0 4rem * $fact;
+      height: auto;
+      width: 100%;
+      @include idealFlex;
+      .footer-logo {
+        width: 5.5rem * $fact;
+        height: 5.5rem * $fact;
+      }
+    }
+  }
+
+  ul {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20%;
+    @include flex(center, center);
+    li {
+      margin: 1rem 4rem;
+      width: auto;
+    }
+  }
+  .social {
+    margin: 4rem*$fact 0;
+    text-align: center;
+    padding: 0 7%;
+    font-size: 1.9rem;
+    width: 100%;
+    i {
+      cursor: pointer;
+      margin: 0 1rem * $fact;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        color: color(strong-cyan);
+      }
     }
   }
 }
